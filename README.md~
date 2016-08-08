@@ -7,9 +7,6 @@ Linux Yaz Kampı 2016 Web Uygulama Güvenliği ve Güvenli Kod Geliştirme Kursu
 * [Murat Yılmazlar](http://xploithub.blogspot.com.tr)
 
 #### <i class="icon-file"></i> Kaynaklar
-* [XSS Sniffer](sniffer)
-* [BaunBit Vulnerable System](baunbit)
-* [Baklava CMS](baklavaCMS)
-* [Cases](cases)
-* [XSS Payloads](xss_payloads.txt)
-* [SQL Injection Payloads](sql_inj_payloads.txt)
+* [XSS Sniffer]()
+* [BaunBit Vulnerable System]()
+* [Baklava CMS]()
