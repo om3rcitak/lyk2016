@@ -12,4 +12,4 @@ Linux Yaz Kampı 2016 Web Uygulama Güvenliği ve Güvenli Kod Geliştirme Kursu
 * [Baklava CMS](baklavaCMS)
 * [Cases](cases)
 * [XSS Payloads](xss_payloads.txt)
-* [SQL Injection Payloads](sql_inj_payloads.txt)
+* [SQL Injection Payloads](sql_injection_payloads.txt)
