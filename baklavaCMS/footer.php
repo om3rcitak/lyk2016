@@ -1,1 +1,2 @@
-burası footer
+</body>
+</html>
