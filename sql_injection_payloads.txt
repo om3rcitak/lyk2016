@@ -1,3 +1,1 @@
-* [siesaref] (https://github.com/Om3rCitak/lyk2016/blob/master/siesaref/kayit_ol.php)dosyası içersinde ki sqli payloadı
-  username','password',1)# şekilnde kullanınca sql query yapısı bozulur ve username adlı kullanıcı admin olarak eklenir. 
-  
+
