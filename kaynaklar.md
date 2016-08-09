@@ -15,3 +15,4 @@
 * https://pentesterlab.com/exercises/web_for_pentester_II/
 * http://www.itsecgames.com/
 * http://d3adend.org/xss/ghettoBypass xss payloads
+* https://www.exploit-db.com/papers/17934/
