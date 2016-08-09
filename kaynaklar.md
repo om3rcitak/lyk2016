@@ -16,3 +16,7 @@
 * http://www.itsecgames.com/
 * http://d3adend.org/xss/ghettoBypass xss payloads
 * https://www.exploit-db.com/papers/17934/
+* http://ha.cker.io/
+* https://www.mertsarica.com/
+* http://onuryilmaz.info/
+* https://www.reddit.com/r/lolphp/
