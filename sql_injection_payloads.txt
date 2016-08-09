@@ -1,1 +1,3 @@
-
+siesaref dosyası içersinde ki sqli payloadı :
+username','password',1)# şekilnde kullanınca sql query yapısı bozulur ve username adlı kullanıcı admin olarak eklenir. 
+  
