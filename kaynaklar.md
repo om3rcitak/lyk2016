@@ -14,3 +14,4 @@
 * http://overthewire.org/wargames/ --online ctf
 * https://pentesterlab.com/exercises/web_for_pentester_II/
 * http://www.itsecgames.com/
+* http://d3adend.org/xss/ghettoBypass xss payloads
