@@ -1,0 +1,18 @@
+INTVAL
+
+PHP herşeyi sayılara çevirip sayılar üzerinden bir şeyler yapmaya çalışır.
+
+Intval içindeki parametreyi integer`e çevirir. Kimse bu sistemi geçemez.
+
+
+*$id=(int)intual($_GET[“id”]); $adi=$_GET[“adi”];
+
+String veri gönderiyorsak tırnak içine alınır.
+Özel karakter kullanıyorsak ters slash kullanırız:
+
+\t\:
+
+Username: `omer\``   örneğinde “ ters slash” ve “tek tırnak”  karakterleri
+tek karakter olarak görür.
+
+Add slashes güvenlik açığı içeren zararlı fonksiyonlardır.
