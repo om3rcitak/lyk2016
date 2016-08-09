@@ -10,3 +10,7 @@
 * https://pentesterlab.com/exercises/web_for_pentester
 * http://pentestmonkey.net/
 * https://www.vulnhub.com/
+* https://www.netsparker.com.tr/blog/
+* http://overthewire.org/wargames/ --online ctf
+* https://pentesterlab.com/exercises/web_for_pentester_II/
+* http://www.itsecgames.com/
