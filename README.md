@@ -28,7 +28,7 @@ Linux Yaz Kampı 2016 Web Uygulama Güvenliği ve Güvenli Kod Geliştirme Kursu
 * Mert Gücü(http://github.com/)
 * Merve AKAY(http://github.com/)
 * Oğuzhan Karaaslan(http://github.com/)
-* Ege Tekiner(http://github.com/)
+* [Ege Tekiner](http://github.com/egetekiner)
 * Bahadır YARDIM(http://github.com/)
 * Nikita TURKMEN(http://github.com/)
 * Ramazan VAPURCU(http://github.com/)
