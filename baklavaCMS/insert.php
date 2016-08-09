@@ -3,11 +3,17 @@
     <?php
 
     if(isset($_POST["user_id"])){
-        $userid = $_POST["user_id"];
-        $date = date("d.m.Y H:i:s");
-        $sql = "INSERT INTO payments VALUES (NULL, ".$userid.", '".$date."')";
-        mysql_query($sql);
-        echo "borç başarıyla kitlendi.";
+        //sql injection zafiyeti kapatıldı.
+        $userid =(int) intval($_POST["user_id"]);
+            $date = date("d.m.Y H:i:s");
+            $sql = "INSERT INTO payments VALUES (NULL, ".$userid.", '".$date."')";
+            //query exec kontrolu yapıldı
+            if(mysql_query($sql)){
+                echo "borç başarıyla kitlendi.";
+            }else{
+                echo "Sorgu Çalıştırılamadı!";
+            }
+
     }
 
     ?>
