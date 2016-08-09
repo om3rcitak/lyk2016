@@ -1,0 +1,55 @@
+<?php
+require "config.php";
+
+$userid = $_GET["user_id"];
+$yetki = $_GET["yetki"]
+
+if(isset($_SESSION["user"])){
+	if($_SESSION["isadmin"]==1){
+		echo "adminsiniz";
+	}else{
+		echo "admin değilsiniz";
+	}
+}else{
+	echo "henüz giriş yapılmamış";
+}
+
+if(isset($_POST["username"])){
+	$username = mysql_real_escape_string($_POST["username"]);
+	$password = md5($_POST["password"]);
+	$sql = "SELECT * FROM users WHERE username='$username' AND password='$password'";
+  if( mysql_num_rows($sql) != 1 ){
+    print '<script>alert("Kullanıcı bulunamadı!");</script>';
+  }else{
+      $user = mysql_fetch_assoc($sorgu);
+	$_SESSION["user"] = $user["id"];
+  }
+
+}
+
+
+$sql="SELECT * FROM users";
+    $query = mysql_query($sql);
+    echo "<table border='1'>";
+    while($row = mysql_fetch_assoc($query)){
+        echo "<tr>";
+            echo "<td>".$row["username"]."</td>";
+	echo "<td>".$row["isadmin"]."</td>";
+	if($row["isadmin"]==1){
+	echo "<td>
+		    <a href='yetki_degistir.php?user_id=".$row["id"]."&yetki=0'>
+		    adminlikten çıkar
+		    </a>
+		    </td>";
+	}else{
+	echo "<td>
+		    <a href='yetki_degistir.php?user_id=".$row["id"]."&yetki=1'>
+		    admin yap
+		    </a>
+		    </td>";
+	}
+        echo "<tr>";
+    }
+    echo "</table>"
+    ?>
+
