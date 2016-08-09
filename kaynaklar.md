@@ -20,3 +20,4 @@
 * https://www.mertsarica.com/
 * http://onuryilmaz.info/
 * https://www.reddit.com/r/lolphp/
+* https://www.klavyedelikanlilari.com/
