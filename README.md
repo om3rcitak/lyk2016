@@ -15,13 +15,13 @@ Linux Yaz Kampı 2016 Web Uygulama Güvenliği ve Güvenli Kod Geliştirme Kursu
 * [SQL Injection Payloads](sql_injection_payloads.txt)
 
 #### <i class="icon-user"></i> Katılımcılar
-* [Kadir Kurt](http://github.com/kadirkurt)
+* Kadir Kurt(http://github.com/)
 * Erdem Oflaz(http://github.com/)
 * Zeynep Yurt(http://github.com/)
 * Ahmet Erşin(http://github.com/)
 * Sertunç Selen(http://github.com/)
 * İsmail Kunduracıoğlu(http://github.com/)
-* Büşra Uman(http://github.com/)
+* [Büşra Uman](http://github.com/BusraUman)
 * Mevlüt Aydemir(http://github.com/)
 * Taha Baş(http://github.com/)
 * Emre AKPINAR(http://github.com/)
