@@ -1,1 +1,2 @@
 * http://omercitak.com/
+* SQLİ Union-Based Byass : https://www.exploit-db.com/papers/17934/
