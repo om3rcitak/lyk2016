@@ -14,6 +14,14 @@ Linux Yaz Kampı 2016 Web Uygulama Güvenliği ve Güvenli Kod Geliştirme Kursu
 * [XSS Payloads](xss_payloads.txt)
 * [SQL Injection Payloads](sql_injection_payloads.txt)
 
+#### Ekipler ve Notları
+* [0day](0day.md)
+* [KeepCalm](KeepCalm.md)
+* [NightWatch](NightWatch.md)
+* [bestHack](bestHack.md)
+* [nullByte](nullByte.md)
+* [sudo](sudo.md)
+
 #### <i class="icon-user"></i> Katılımcılar
 * [Kadir Kurt](http://github.com/kadirkurt)
 * [Erdem Oflaz](http://github.com/erdemoflaz)
