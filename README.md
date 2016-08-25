@@ -1,7 +1,6 @@
 # lyk2016
 Linux Yaz Kampı 2016 Web Uygulama Güvenliği ve Güvenli Kod Geliştirme Kursu Kaynakları
 
-
 #### <i class="icon-user"></i> Eğitmenler
 * [Ömer Çıtak](http://omercitak.com/)
 * [Murat Yılmazlar](http://xploithub.blogspot.com.tr)
@@ -47,3 +46,5 @@ Linux Yaz Kampı 2016 Web Uygulama Güvenliği ve Güvenli Kod Geliştirme Kursu
 * [Burak Çakmak](http://github.com/cumbur)
 * [Ahmet Kun](http://github.com/keune)
 * [Mücahit Demirhan](http://github.com/mucahitd)
+
+Blog post: [http://omercitak.com/linux-yaz-kampi-2016-hakkinda/](http://omercitak.com/linux-yaz-kampi-2016-hakkinda/)
