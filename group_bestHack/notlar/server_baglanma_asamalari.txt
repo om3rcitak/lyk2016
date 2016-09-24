@@ -1,0 +1,55 @@
+
+Herhangi bir web serverına istekte bulununca hangi aşamalardan geçildiğinden bahsedildi. Bunu anlatırken google.com u örnek olarak kullandık.
+1-Bilgisayarı fişe tak
+2-Power tuşuna bas
+3-Browerı aç
+4-Araç çubuğuna google.com yaz
+ (Bizim ilgileneceğimiz kısım bu aşamada başlıyor.)
+5-google.com a istek yapılacak paket hazırlandı.
+
+ Bu adımda bir parantez açalım ve paket kavramından bahsedelim
+İnternet ortamında herhangi bir request(istek) paketler aracılığıyla yapılmaktadır. Peki bu paket içinde neler bulunur:
+Host : istek yapılan server bu örnegimiz için google.com
+User-Agent : Kullanıcı bilgileri (ör: Kullandığımız browser hakkında bilgi)
+cookie : Kullanıcı cookiesi (Tabi var ise)
+gibi bilgiler bulunmaktadır. Şimdi paketimiz hazır olduğuna göre diğer adımlara bakalım
+
+6-Host dosyasına bakılır google.com domainine ait bir ip numarası var mı diye
+
+ Şimdi de Host dosyası nedir ona bakalım.
+Host dosyası web sitelerinin domainleri(isimleri) ve ip numaraları ile ilgili eşleştirmeleri bulundurur. Eğer orda aranan domain kayıtlı ise
+eşlendiği ip adresine istek yapılır.
+Host dosyası Linux sistemlerde /etc/hosts , windows sistemler de ise C:\Windows\System32\drivers\etc\hosts bulunurlar.
+
+7-Router'a bakılır
+8-Modem
+9-Hizmet sağlayıcısı(ör: türktelekom)
+10-Google'ın ip adresine istek yapıldı.
+11-Google ın web serverı paketi aldı.
+12-x.php ye gerekli bilgileri gönderdi.
+13-php dosyası yorumlanarak işlem sonucu oluşturuldu.
+14-php oluşturduğu sonucu apache'ye iletti
+15-Apache response(yanıt) sonucunu hazırladı.
+16-Hazırlanan paket modemimizin ip'sine yollandı.
+17- Browser gelen yanıt html ini  yorumlar ve bize sunar.
+
+Son olarak bir url in yapısından bahsedildi.
+ http://www.google.com.tr:80/
+Bu yapıda 
+http | https | ssh : kullanılan protokolu gösterir.(http protokolunde 1.0 sürümü var 1.1 sürümünü kullanmaktayız ve 2.0 sürümü geliştirilmekte)
+www  : subdomain
+google : domain
+com : uzantı
+tr : ülke uzantısı
+80 :(örnek olarak 80 yazdıldı.) Port ve sonrasında ise dizinler bulunmaktadır.
+
+ssh protokolü ile bağlanmak istediğimiz zaman url yapımız ssh://username@hostname[:port]/path şeklinde değişecektir.
+ 
+
+
+
+
+
+
+
+
