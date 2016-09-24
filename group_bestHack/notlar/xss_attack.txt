@@ -1,0 +1,65 @@
+ XSS Saldırıları Nedir?
+
+XSS | CSS ( Cross Site Scripting ) 
+
+Kullanıcıdan alınan inputların validationları yapılmadan işleme alınması sırasında oluşan açıktır. Aslında bütün açıkların temeli inputtan gelen verilerin olduğu gibi herhangi bir kontrolden geçirilmeden işleme alınmasıdır. XSS açığı ile javascript kodları çalıştırarak kullanıcılarına zarar verilebilir.Bu saldırı mantığı ile siteyi ziyaret eden kullanıcıların oturum bilgileri çalınabilir(cookie). Ziyaretçi kandırılarak bilgisayarına virüs vb zararlı yazılımlar yüklenebilir. Böylece kullanıcının kimlik bilgileri,parolaları ele geçirilebilir. Siteye index atılabilir. Sunucuya zararlı dosyalar yüklenebilir.
+
+ XSS Türleri
+  1-DOM-Based XSS
+  2-Reflected XSS
+  3-Stored XSS
+
+1- DOM-Based XSS
+ Document Object Model girdiğimiz web sitesinde kullanılan objelere(resim, button,input) javascript ile müdahale etmemizi sağlar.
+örnek payloadlar 
+document.write(...)
+document.body.innerHtml=...
+window.open(…)
+window.location.href=...(yer, alan ve host atama)
+eval(…) --> dogrudan script çalıştır.
+
+2- Reflected XSS 
+  Yine kullanıcıdan alınan bir inputun belirli kontrollerden geçirilmeden direkt ekrana basılarak oluşturduğu bir açıktır.
+Bu saldırı türü diğer ziyaretçileri etkilemez.(Tabi başka bir açık ile birlikte kullanıldığında durum farklı olabilir.)
+ örnek:
+ <?php
+	$input = $_GET["xss"];
+	echo $input;
+?>
+Bu kod ile kullanıcıdan gelen xss get parametresi olduğu gibi ekrana basılmıştır. Burda <script> </script> tagları arasına yazılan kodlar çalışacaktır.
+örnek olarak  <script>alert("XSS Saldırısı")</script>  payloadı verilebilir bu payload ile ekrana bir uyarı mesajı yazdırılabilir.
+
+3- Stored XSS
+  XSS saldırıları arasında tehlikeli olan saldırı türüdür. Daha çok forumlar, yorum alanları gibi depolanan alanlarda kullanılır bu şekilde veritabanına kaydolan payload sayfaya giren ziyaretçilere zarar verir. 
+<script>document.cookie</script> payloadı ile sayfaya giren ziyaretçinin cookiesi çalınarak o kullanıcı adına giriş yapılabilir.
+
+Saldırı çeşitlerinden ve etkilerinden bahsettik şimdi bu açıklardan nasıl korunabiliriz onlara bakalım.
+ İlk önce  <, >, ", ' gibi karakterleri engelleyebiliriz. script kelimesini engelleyebiliriz fakat kesin çözüm olmaz. Kullanıcı script keywordunü büyük küçük harf ile yazabilir mesela SCript şeklinde payloadı çalıştırabilir. Peki büyük-küçük harf duyarlı bir koruma yöntemi geliştirilebilir.
+Ya da replace("","script"); script kelimesini gördüğü anda null olarak değiştiren bir önlem alabiliriz. Bu önlem de ise saldırgan engellemeye çalıştığımız inputu iç içe yazarak (scrscriptipt) bypass edebilir. içerdeki script "" ile değiştiği anda dışta kalan script yeniden bir payload oluşturur. Bu yöntemi recursive yaparsak iç içe yazma işleminin de önlemini almış oluruz.
+
+Php ile yazıyor isek htmlspecialchars() metodu ile oluşabilecek XSS saldırılarını engellemiş oluruz. Bu durumda saldırgan istediği payloadı yazabilir html tarafında bunlar yorumlanamayacağı için zararlarından korunmuş oluruz.Eğer tüm HTML karakter öğelerinin dönüştürülmesi gerekiyorsa htmlentities() metodunu kullanmak daha iyi sonuç verir.
+
+Dönüşüm sırasında şunlar yapılır:
+
+'&' (ve imi) '&amp;' haline gelir.
+'"' (çift tırnak) ENT_NOQUOTES belirtilmişse '&quot;' haline gelir.
+''' (tek tırnak) ENT_QUOTES belirtilmişse '&#039;' haline gelir.
+'<' (küçüktür) '&lt;' haline gelir
+'>' (büyüktür) '&gt;' haline gelir
+
+Metot hakkında daha detaylı bilgi için http://php.net/manual/tr/function.htmlspecialchars.php 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+   

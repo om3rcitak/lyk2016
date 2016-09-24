@@ -1,0 +1,8 @@
+Base64'un Kullanım Amacı Nedir?
+   Resim gömmede kullanılıyor. Transfer işlemleri için yazılmış bir algoritmadır. ASCII karakterlerini kullanan
+ortamlarda veri transferi esnasında veri kaybı oluşaması için kullanılır. Veri şifreleme algoritması değildir,
+sadece karakter desteği için oluşturulmuş bir algoritmadır. Her karakterin bir karşılığı vardır.
+6 bitlik bloklar halinde veriyi parçalar ve eksik kalan bitleri = karakteri ile doldurur.
+örnek olarak : lyk2016 verisini bHlrMjAxNg0KDQo= şeklinde encode eder.
+https://www.base64encode.org/ sitesinde encode ve decode işlemlerini yapabiliriz.
+
